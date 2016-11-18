@@ -1,0 +1,16 @@
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|   
+|Tibor weet jij hoe ik nu een session krijg met het id dat ik meegeef in de login?  |
+|Naam: root                                                                         |
+|Pass: root                                                                         |
+|Als je inlogt dan kan je op de submit klikken en dan zie je en daarmee kan je dan  |
+|het UserId ophalen en dat wil ik in de login functie zetten zodat je kan inloggen  |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+|===============================================|
+|Usefull links easypeasy animating and styling  |
+|===============================================|
+|http://materializecss.com                      |
+|https://daneden.github.io/animate.css/         |
+|http://codepen.io/tobiasdev/pen/dXvzVd         |
+|===============================================|
+

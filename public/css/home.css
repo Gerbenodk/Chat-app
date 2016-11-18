@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
+
+.wrapper {
+  width: 70%;
+  height: 97vh;
+  display: block;
+  margin: 0 auto;
+  min-width: 700px;
+  position: relative;
+  background-color: rgba(52, 73, 94,0.7);
+}
+.wrapper .content {
+  position: relative;
+}
+.wrapper .content aside {
+  height: 97vh;
+  float: left;
+  width: 250px;
+  background-color: rgba(52, 73, 94,0.7);
+}
+.wrapper .content aside .contacts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.wrapper .content aside .contacts li {
+  width: 100%;
+  height: 60px;
+  background-color: #1a8679;
+  margin-bottom: 1px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+.wrapper .content aside .contacts li:hover .online:after {
+  content: 'ON';
+  position: absolute;
+  color: #74dc80;
+  font-family: "Roboto", sans-serif;
+  right: -2px;
+  bottom: -15px;
+  font-size: .8em;
+}
+.wrapper .content aside .contacts li:hover .offline:after {
+  content: 'OFF';
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  color: #d64848;
+  right: -3px;
+  bottom: -15px;
+  font-size: .8em;
+}
+.wrapper .content aside .contacts li .online {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  font-size: 0.8em;
+  color: #74dc80;
+  transition: all 200ms ease-in-out;
+}
+.wrapper .content aside .contacts li .offline {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  font-size: 0.8em;
+  color: #d64848;
+  transition: all 200ms ease-in-out;
+}
+.wrapper .content aside .contacts li img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 8px;
+  object-fit: cover;
+}
+.wrapper .content aside .contacts li span:nth-child(2) {
+  position: absolute;
+  left: 70px;
+  line-height: 3;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+}
+.wrapper .content aside .contacts li span:nth-child(3) {
+  position: absolute;
+  left: 70px;
+  font-style: italic;
+  line-height: 6.8;
+  font-size: .8em;
+  color: #cecece;
+}
+.wrapper .content .messages {
+  width: calc(100% - 250px);
+  height: 85vh;
+  position: absolute;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.wrapper .content h1 {
+  transform: translate(35px, 10px);
+  font-family: "Roboto", sans-serif;
+  color: #white;
+
+}
+.wrapper .content h1:after {
+  content: '';
+  width: 75%;
+  margin-left: 250px;
+  height: 1px;
+  background-color: #d3cbcb;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.wrapper .content .messages .row {
+  width: 100%;
+  display: table;
+  font-family: "Roboto", sans-serif;
+  color: #333232;
+  font-size: 0.8em;
+}
+.wrapper .content .messages .row .bubble-left {
+  position: relative;
+  max-width: 330px;
+  min-height: 15px;
+  padding: 10px;
+  background: #d3cbcb;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 30px 0px 10px 35px;
+  float: left;
+  word-wrap: break-word;
+}
+.wrapper .content .messages .row .bubble-left:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 10px 8px 0px;
+  border-color: transparent #d3cbcb;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -10px;
+  top: 10px;
+}
+.wrapper .content .messages .row .bubble-right {
+  position: relative;
+  max-width: 330px;
+  word-wrap: break-word;
+  min-height: 15px;
+  padding: 10px;
+  background: #d3cbcb;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 30px 30px 10px 35px;
+  float: right;
+}
+.wrapper .content .messages .row .bubble-right:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 0 8px 10px;
+  border-color: transparent #d3cbcb;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -10px;
+  top: 10px;
+}
+
+.message {
+  height: 50px;
+  background-color: orange;
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 250px);
+  overflow: hidden;
+}
+.message input {
+  width: 100%;
+  height: 48px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #333232;
+}
+.message button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #1a8679;
+  color: white;
+  height: 100%;
+  width: 70px;
+  font-family: "Roboto", sans-serif;
+  transition: 400ms;
+  z-index: 999;
+}
+.message button:hover {
+  background-color: #179788;
+}
+
+/* Scroll */
+.messages::-webkit-scrollbar {
+  width: .5em;
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: rgba(206, 206, 206, 0.5);
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #989494;
+}

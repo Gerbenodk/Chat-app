@@ -1,0 +1,15 @@
+html {
+  background: url(../img/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*Font*/
+h1, h2, h3, h4, h5, h6, input, b, p, a{
+  font-family: Arial;
+}
+/*Font color*/
+h1, h2, h3, h4, h5, h6{
+  color: #fff;
+}

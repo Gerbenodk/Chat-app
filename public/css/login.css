@@ -1,0 +1,124 @@
+html {
+  background: url(../img/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*Font*/
+h1, h2, h3, h4, h5, h6, input, b, p, a{
+  font-family: Arial;
+}
+/*Font color*/
+h1, h2, h3, h4, h5, h6{
+  color: #fff;
+}
+
+
+.container{
+  width: 500px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: rgba(52, 73, 94,0.7);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 150px;
+  -webkit-animation-duration: 10s;
+}
+
+.container img{
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 0px;
+  border-radius: 50%
+}
+
+input{
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding-left: 40px;
+}
+
+.form-input::before{
+  content: "\f007";
+  position: absolute;
+  color: black;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.form-username {
+  position: relative;
+}.form-username:before {
+  font-family: "FontAwesome";
+  font-size: 18px;
+  content: "\f007";
+  position: absolute;
+  left: 15px;
+  top: -1px;
+}
+
+.form-password {
+  position: relative;
+}.form-password:before {
+  font-family: "FontAwesome";
+  font-size: 18px;
+  content: "\f084";
+  position: absolute;
+  left: 15px;
+  top: -1px;
+}
+
+.btn{
+  width: 340px;
+  margin: 0 auto;
+}
+
+/*button-login*/
+.btn-login{
+  position: relative;
+  width: 50%;
+  height: 44px;
+  padding: 0;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #2ecc71;
+  border-bottom: 0.5px solid #28be68;
+  cursor: pointer;
+  text-align: center;
+}.btn-login:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*button-forgot*/
+.btn-forgot{
+  float: left;
+  position: relative;
+  font-size: 18px;
+  width: 50%;
+  height: 45px;
+  padding: 0;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border-bottom: 0.5px solid #db4334;
+  cursor: pointer;
+}.btn-forgot:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
